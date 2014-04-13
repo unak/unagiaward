@@ -1,0 +1,17 @@
+ja:
+  whats: "Ruby Unagi Awardとは？"
+  whats_desc: >
+    Ruby Unagi Awardは、Ruby、特にCRuby(MRIとも呼ばれています)に対して貢献した人を顕彰するために、Rubyist有志によって創設された賞です。
+    過去1～2年程度の期間において、CRubyに対して顕著な貢献を成した人物を選出し、RubyKaigi開催期間に合わせて、鰻を奢ってその労をねぎらうことを趣旨としています。
+
+  nomination: 推薦受付
+  nomination_desc: >
+    近日中に、2014年度の推薦受付を開始する予定です。
+
+  party: 授賞パーティー
+  party_desc: >
+    <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
+    RubyKaigi開催のおよそ1ヶ月前程度を目処に、先着順会費制で参加者を募集できる見込みです。
+
+  winners: 過去の受賞者
+  0th: "第0回(2013年度): @nagachika さん"
