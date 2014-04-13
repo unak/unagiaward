@@ -1,18 +1,18 @@
 en:
   whats: What's Ruby Unagi Award?
   whats_desc: >
-    Ruby Unagi Award is the award in order to honor the person who contributed to Ruby - especially, CRuby (a.k.a. MRI) - founded by rubyist volanteers.
+    Ruby Unagi Award is an award in order to honor the person who contributed to Ruby - especially, CRuby (a.k.a. MRI) - founded by rubyist volunteers.
     The person who contributed notably to CRuby in about last 1 or 2 years will be awarded.
-    The winner will be treated to an unagi (Japanese eel dish) and be appreciated the pains.
+    The winner will be treated to an unagi (Japanese eel dish) and be appreciated for their pains.
 
   nomination: Nomination
   nomination_desc: >
-    The nomination registration in 2014 will be started in a few days.
+    The nomination registration for 2014 will start in a few days.
 
   party: Award Party
   party_desc: >
-    According to <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>, the award party (luncheon party) will be held.
-    About one month before RubyKaigi, participants will be looked for it.
+    The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>.
+    About one month before RubyKaigi, participants will be solicited.
 
   winners: The Past Winners
   0th: "the 0th winner (in 2013): @nagachika"
