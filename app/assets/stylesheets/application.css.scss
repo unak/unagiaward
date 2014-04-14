@@ -14,6 +14,11 @@
  *= require_self
  */
 
+$ruby-red: #9b111e;
+$misty-rose: #ffe4e1;
+$navbar-inverse-bg: $ruby-red;
+$navbar-inverse-link-color: $misty-rose;
+
 @import "bootstrap";
 
 body { padding-top: 50px; }
