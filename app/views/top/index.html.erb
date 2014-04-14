@@ -1,27 +1,36 @@
-<div class="jumbotron">
-  <h1><%=t 'whats' %></h1>
-  <p><%=t 'whats_desc' %></p>
-</div>
-
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4">
-      <h2><%=t 'nomination' %></h2>
-      <p><%=t 'nomination_desc' %></p>
-      <p><%= link_to raw(t('do_nomination')), nominates_path, class: 'btn btn-primary', role: 'button' %></p>
+    <div class="col-md-9">
+      <div class="jumbotron">
+        <h1><%=t 'whats' %></h1>
+        <p><%=t 'whats_desc' %></p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <h2><%=t 'nomination' %></h2>
+          <p><%=t 'nomination_desc' %></p>
+          <p><%= link_to raw(t('do_nomination')), nominates_path, class: 'btn btn-primary', role: 'button' %></p>
+        </div>
+
+        <div class="col-md-4">
+          <h2><%=t 'party' %></h2>
+          <p><%=raw t 'party_desc' %> <span class="label label-info">Comming Soon!</span>
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h2><%=t 'winners' %></h2>
+          <ul class="list-group">
+            <li class="list-group-item"><%=t '0th' %></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="col-md-4">
-      <h2><%=t 'party' %></h2>
-      <p><%=raw t 'party_desc' %> <span class="label label-info">Comming Soon!</span>
-      </p>
-    </div>
-
-    <div class="col-md-4">
-      <h2><%=t 'winners' %></h2>
-      <ul class="list-group">
-        <li class="list-group-item"><%=t '0th' %></li>
-      </ul>
+    <div class="col-md-3">
+      <a class="twitter-timeline" href="https://twitter.com/search?q=%23unagiaward" data-widget-id="455709477874847744">#unagiaward</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
   </div>
 </div>
