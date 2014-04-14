@@ -41,7 +41,9 @@ gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
 
 # for my app
-gem 'sorcery'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
 gem 'bootstrap-sass'
 gem 'simple_form'
 
