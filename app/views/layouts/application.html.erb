@@ -23,14 +23,14 @@
     <div id="navbar-collapse-target" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-left">
         <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && %w(index new create).include?(controller.action_name) %>><%= link_to t('nomination'), nominates_path %></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-<% if login_user %>
 <% if admin? %>
         <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && controller.action_name == 'list' %>><%= link_to 'Listing nominates', nominates_list_path %></li>
         <li><!-- separator -->&nbsp;</li>
 <% end %>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+<% if login_user %>
         <li><p class="navbar-text navbar-right"><%= login_user.name %><%= ' (admin)' if admin? %></p></li>
         <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span>'), signout_path, title: 'sign out' %></li>
         <li><!-- separator -->&nbsp;</li>
