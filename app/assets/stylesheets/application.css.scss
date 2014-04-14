@@ -26,4 +26,14 @@ $font-family-monospace: Menlo, Monaco, Consolas, "Osaka－等幅", Osaka-mono, "
 
 @import "bootstrap";
 
-body { padding-top: 50px; }
+body {
+  padding-top: 50px;
+}
+
+.navbar-brand {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+h1, h2 {
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
