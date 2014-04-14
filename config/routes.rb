@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
+  get 'sessions/create'
+  get 'sessions/destroy'
+
+  match via: :get, '/auth/:provider/callback' => 'sessions#create'
+
   scope '/:locale' do
     get 'top/index'
+    get '/signout', to: 'sessions#destroy'
+    get 'nominates/list'
+    resources :nominates
+
     root 'top#index'
   end
 

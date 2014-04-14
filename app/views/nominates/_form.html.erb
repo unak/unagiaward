@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><%=t 'nomination' %></div>
+  <div class="panel-body">
+<%= simple_form_for(@nominate, html: { class: 'form-horizontal', role: 'form' }) do |f| %>
+  <%= f.input :user_id, as: :hidden %>
+  <%= f.input :candidate %>
+  <%= f.input :reason %>
+  <div class="form-group">
+    <div class="controls-only">
+      <%= f.button :submit, class: 'btn-primary' %>
+    </div>
+  </div>
+<% end %>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
 <head>
-  <title>Ruby Unagi Award</title>
+  <title><%= "#{t page_title} - " if page_title %>Ruby Unagi Award</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -21,20 +21,50 @@
     </div>
 
     <div id="navbar-collapse-target" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && %w(index new create).include?(controller.action_name) %>><%= link_to t('nomination'), nominates_path %></li>
+      </ul>
+
       <ul class="nav navbar-nav navbar-right">
-        <li<%=raw ' class="active"' if I18n.locale == :en %>><a href="/en">English</a></li>
-        <li<%=raw ' class="active"' if I18n.locale == :ja %>><a href="/ja">日本語</a></li>
+<% if login_user %>
+<% if admin? %>
+        <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && controller.action_name == 'list' %>><%= link_to 'Listing nominates', nominates_list_path %></li>
+        <li><!-- separator -->&nbsp;</li>
+<% end %>
+        <li><p class="navbar-text navbar-right"><%= login_user.name %><%= ' (admin)' if admin? %></p></li>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span>'), signout_path, title: 'sign out' %></li>
+        <li><!-- separator -->&nbsp;</li>
+<% end %>
+        <li<%=raw ' class="active"' if I18n.locale == :en %>><a href="/en<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %>">English</a></li>
+        <li<%=raw ' class="active"' if I18n.locale == :ja %>><a href="/ja<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %>">日本語</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<% if flash['alert'] %>
+<div class="container-fluid">
+  <div class="alert alert-danger fade in">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <%= flash['alert'] %>
+  </div>
+</div>
+<% end %>
+<% if flash['notice'] %>
+<div class="container-fluid">
+  <div class="alert alert-info fade in">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <%= flash['notice'] %>
+  </div>
+</div>
+<% end %>
 
 <%= yield %>
 
 <hr>
 
 <footer><div class="text-center">
-Copyright &copy; 2014 by usa<br><a href="https://github.com/unak/unagiaward">repository on GitHub</a>
+Copyright &copy; 2014 usa<br><a href="https://github.com/unak/unagiaward">repository on GitHub</a>
 </div></footer>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

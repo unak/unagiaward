@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @nominate.user_id %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @nominate.candidate %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @nominate.reason %>
+</p>
+
+<%= link_to 'Edit', edit_nominate_path(@nominate) %> |
+<%= link_to 'Back', nominates_path %>

@@ -1,12 +1,40 @@
 ja:
-  whats: "Ruby Unagi Awardとは？"
+  errors: &errors
+    messages:
+      accepted: 承諾してください。
+      blank: 空にはできません。
+      present: 入力できません。
+      confirmation: 本項目と%{attribute}の入力が一致しません。
+      empty: 空にはできません。
+      equal_to: 入力値は%{count}にしてください。
+      even: 入力値は偶数にしてください。
+      exclusion: 入力された値は予約されています。
+      greater_than: 入力値は%{count}より大きい値にしてください。
+      greater_than_or_equal_to: 入力値は%{count}以上の値にしてください。
+      inclusion: 入力値は一覧にありません。
+      invalid: 不正な値です。
+      less_than: 入力値は%{count}より小さい値にしてください。
+      less_than_or_equal_to: 入力値は%{count}以下の値にしてください。
+      not_a_number: 数値で入力してください。
+      not_an_integer: 整数で入力してください。
+      odd: 入力値は奇数にしてください。
+      record_invalid: バリデーションに失敗しました。 %{errors}
+      restrict_dependent_destroy: ! '%{record}が存在しているので削除できません。'
+      taken: 入力された値はすでに存在します。
+      too_long: "%{count}文字以内で入力してください。"
+      too_short: "%{count}文字以上で入力してください。"
+      wrong_length: "%{count}文字で入力してください。"
+      other_than: "%{count}以外の値にしてください。"
+
+  whats: Ruby Unagi Awardとは？
   whats_desc: >
     Ruby Unagi Awardは、Ruby、特にCRuby(MRIとも呼ばれています)に対して貢献した人を顕彰するために、Rubyist有志によって創設された賞です。
     過去1～2年程度の期間において、CRubyに対して顕著な貢献を成した人物を選出し、RubyKaigi開催期間に合わせて、鰻を奢ってその労をねぎらうことを趣旨としています。
 
   nomination: 推薦受付
   nomination_desc: >
-    近日中に、2014年度の推薦受付を開始する予定です。
+    2014年度の推薦を受け付けています。自薦・他薦を問いません。
+  do_nomination: "推薦する &raquo;"
 
   party: 授賞パーティー
   party_desc: >
@@ -15,3 +43,35 @@ ja:
 
   winners: 過去の受賞者
   0th: "第0回(2013年度): @nagachika さん"
+
+  nominate_message: >
+    現在、2014年度(第1回)の候補者推薦を受け付けています。
+  nominate_alert: >
+    <strong>注意</strong><br>
+    候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>
+    頂いた認証情報は、推薦情報の登録にのみ用い、他の用途には流用いたしません。
+    また、本Awardおよび関係者が、認証情報を元にTwitterに呟いたりすることなどもございません。
+  auth_twitter: Twitter経由で認証
+  auth_or: または
+  auth_github: GitHub経由で認証
+
+  nominate_created: あなたの推薦内容は正常に受け付けられました。ありがとうございました。
+
+  simple_form:
+    labels:
+      nominate:
+        candidate: 推薦対象者名
+        reason: 推薦理由
+    hints:
+      nominate:
+        candidate: Rubyコミッターアカウント、Twitterアカウント、GitHubアカウント、等 (32文字以内)
+        reason: ほんの一言でOK (140文字以内)
+
+  helpers:
+    submit:
+      nominate:
+        create: 推薦を送信
+
+  signedin: 認証に成功しました。
+  signedout: サインアウトしました。
+  not_permitted: 許可されていない操作を行いました。

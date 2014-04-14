@@ -7,7 +7,9 @@ en:
 
   nomination: Nomination
   nomination_desc: >
-    The nomination registration for 2014 will start in a few days.
+    You can nominate now for 2014.
+    Self-nomination and nomination by others are not asked.
+  do_nomination: "Nominate &raquo;"
 
   party: Award Party
   party_desc: >
@@ -16,3 +18,34 @@ en:
 
   winners: The Past Winners
   0th: "the 0th winner (in 2013): @nagachika"
+
+  nominate_message: >
+    Now we accepts the nomination for 2014 (the 1st award).
+  nominate_alert: >
+    <strong>Caution</strong><br>
+    To nominate, you have to authenticate via Twitter or GitHub.<br>
+    We never use your authentication information for another purpose.
+  auth_twitter: Authenticate via Twitter
+  auth_or: or
+  auth_github: Authenticate via GitHub
+
+  nominate_created: Your nomination was successfully accepted.  Thank you.
+
+  simple_form:
+    labels:
+      nominate:
+        candidate: Candidate
+        reason: Reason
+    hints:
+      nominate:
+        candidate: Ruby committer account, Twitter account, GitHub account, and so on (max 32 letters)
+        reason: Be shortly (max 140 letters)
+
+  helpers:
+    submit:
+      nominate:
+        create: Nominate
+
+  signedin: Successfully authenticated.
+  signedout: Signed out.
+  not_permitted: The action is not permitted.
