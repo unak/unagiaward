@@ -16,8 +16,13 @@
 
 $ruby-red: #9b111e;
 $misty-rose: #ffe4e1;
+
 $navbar-inverse-bg: $ruby-red;
 $navbar-inverse-link-color: $misty-rose;
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
 
 @import "bootstrap";
 
