@@ -40,6 +40,8 @@ ja:
     submit:
       nominate:
         create: 推薦を送信
+    links:
+      cancel: キャンセル
 
   notice:
     signedin: 認証に成功しました。

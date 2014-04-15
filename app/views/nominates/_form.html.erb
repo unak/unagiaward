@@ -8,6 +8,7 @@
   <div class="form-group">
     <div class="controls-only">
       <%= f.button :submit, class: 'btn-primary' %>
+      <%= link_to t('helpers.links.cancel', default: 'Cancel'), (admin? ? nominates_path : root_path), class: 'btn btn-default' %>
     </div>
   </div>
 <% end %>

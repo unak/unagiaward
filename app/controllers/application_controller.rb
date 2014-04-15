@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   end
 
   def check_admin
-    redirect_to root_path, alert: t('not_permitted') unless admin?
+    redirect_to root_path, alert: t('notice.not_permitted') unless admin?
   end
 
   def page_title
@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
     session[:user_id] ? User.find(session[:user_id]) : nil
   end
 
-  def admin?
-    session[:user_id] && (user = User.find(session[:user_id])) && user.provider == "twitter" && user.uid == "5645362"
+  def admin?(user = login_user)
+    user && user.provider == "twitter" && user.uid == "5645362"
   end
 end

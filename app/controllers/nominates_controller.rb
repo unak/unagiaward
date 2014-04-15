@@ -1,17 +1,10 @@
 class NominatesController < ApplicationController
-  before_action :check_admin, except: [:index, :new, :create]
+  before_action :check_admin, except: [:new, :create]
   before_action :set_nominate, only: [:show, :edit, :update, :destroy]
 
   # GET /nominates
   # GET /nominates.json
   def index
-    session[:previous] = request.url
-    if login_user
-      @nominate = Nominate.new
-    end
-  end
-
-  def list
     @nominates = Nominate.all
   end
 
@@ -22,7 +15,10 @@ class NominatesController < ApplicationController
 
   # GET /nominates/new
   def new
-    @nominate = Nominate.new
+    session[:previous] = request.url
+    if login_user
+      @nominate = Nominate.new
+    end
   end
 
   # GET /nominates/1/edit
@@ -37,10 +33,10 @@ class NominatesController < ApplicationController
 
     respond_to do |format|
       if @nominate.save
-        format.html { redirect_to nominates_path, notice: t('nominates.created') }
+        format.html { redirect_to new_nominate_path, notice: t('nominates.created') }
         format.json { render :show, status: :created, location: @nominate }
       else
-        format.html { render :index }
+        format.html { render :new }
         format.json { render json: @nominate.errors, status: :unprocessable_entity }
       end
     end

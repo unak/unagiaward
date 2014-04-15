@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   scope '/:locale' do
     get 'top/index'
     get '/signout', to: 'sessions#destroy'
-    get 'nominates/list'
     resources :nominates
 
     root 'top#index'

@@ -1,16 +1,31 @@
 <div class="container-fluid">
-  <h1 class="page-header"><%=t 'nominates.title' %></h1>
+  <h1 class="page-header">Listing nominates</h1>
 
-  <p><%=t 'nominates.top_message' %></p>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Candidate</th>
+        <th>Reason</th>
+        <th>At (UTC)</th>
+        <th>By</th>
+        <th></th>
+      </tr>
+    </thead>
 
-<% if login_user %>
-  <%= render 'form' %>
-<% else %>
-  <p class="alert alert-warning"><%=raw t 'nominates.top_alert' %></p>
-  <p class="lead text-center">
-    <%= link_to raw(%'<img width="39" height="32" alt="" src="#{asset_path "Twitter_logo_blue-32px.png"}"> #{t "nominates.auth_twitter"}'), '/auth/twitter' %><br>
-    <small><%=t 'nominates.auth_or' %></small><br>
-    <%= link_to raw(%'<img width="32" height="32" alt="" src="#{asset_path "GitHub-Mark-32px.png"}"> #{t "nominates.auth_github"}'), '/auth/github' %><br>
+    <tbody>
+      <% @nominates.reverse_each do |nominate| %>
+        <tr>
+          <td class="col-sm-1"><%= nominate.candidate %></td>
+          <td class="col-sm-6"><%= nominate.reason %></td>
+          <td class="col-sm-2"><%= nominate.updated_at.strftime('%Y-%m-%d %H:%M') %></td>
+          <td class="col-sm-1"><%= admin?(nominate.user) ? 'test' : link_to("@#{nominate.user.name}", "https://#{nominate.user.provider}.com/#{nominate.user.name}") %></td>
+          <td class="col-sm-2"><%= link_to 'Show', nominate, class: 'btn btn-info btn-xs' %> <%= link_to 'Edit', edit_nominate_path(nominate), class: 'btn btn-warning btn-xs' %> <%= link_to 'Destroy', nominate, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <p>
+    <%= link_to 'Make new nomination for test', new_nominate_path, class: 'btn btn-primary' %>
   </p>
-<% end %>
 </div>

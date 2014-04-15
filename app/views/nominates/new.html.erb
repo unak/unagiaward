@@ -1,5 +1,16 @@
-<h1>New nominate</h1>
+<div class="container-fluid">
+  <h1 class="page-header"><%=t 'nominates.title' %></h1>
 
-<%= render 'form' %>
+  <p><%=t 'nominates.top_message' %></p>
 
-<%= link_to 'Back', nominates_path %>
+<% if login_user %>
+  <%= render 'form' %>
+<% else %>
+  <p class="alert alert-warning"><%=raw t 'nominates.top_alert' %></p>
+  <p class="lead text-center">
+    <%= link_to raw(%'<img width="39" height="32" alt="" src="#{asset_path "Twitter_logo_blue-32px.png"}"> #{t "nominates.auth_twitter"}'), '/auth/twitter' %><br>
+    <small><%=t 'nominates.auth_or' %></small><br>
+    <%= link_to raw(%'<img width="32" height="32" alt="" src="#{asset_path "GitHub-Mark-32px.png"}"> #{t "nominates.auth_github"}'), '/auth/github' %><br>
+  </p>
+<% end %>
+</div>
