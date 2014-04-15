@@ -39,69 +39,8 @@ h1, h2 {
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-@mixin col-sm {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  float: left;
-}
-
-form.form-horizontal {
-  label.control-label {
-    @include col-sm;
-    width: 100% / 12 * 2;
-  }
-
-  .controls {
-    @include col-sm;
-    width: 100% / 12 * 10;
-  }
-
-  .controls-only {
-    @include col-sm;
-    margin-left: 100% / 12 * 2;
-  }
-
+form {
   abbr {
     color: red;
-  }
-
-  .error {
-    background-color: $alert-danger-bg;
-
-    .help-inline {
-      font-weight: bold;
-      color: $alert-danger-text;
-    }
-  }
-}
-
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
   }
 }
