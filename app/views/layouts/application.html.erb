@@ -35,8 +35,8 @@
         <li><%= link_to raw('<span class="glyphicon glyphicon-log-out"></span>'), signout_path, title: 'sign out' %></li>
         <li><!-- separator -->&nbsp;</li>
 <% end %>
-        <li<%=raw ' class="active"' if I18n.locale == :en %>><a href="/en<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %>">English</a></li>
-        <li<%=raw ' class="active"' if I18n.locale == :ja %>><a href="/ja<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %>">日本語</a></li>
+        <li<%=raw ' class="active"' if I18n.locale == :en %>><a href="/en<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %><%= '/new' if controller.action_name == 'create' %>">English</a></li>
+        <li<%=raw ' class="active"' if I18n.locale == :ja %>><a href="/ja<%= request.path.sub(%r'\A/(?:en|ja)\b', '') %><%= '/new' if controller.action_name == 'create' %>">日本語</a></li>
       </ul>
     </div>
   </div>
