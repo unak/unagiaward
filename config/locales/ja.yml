@@ -26,37 +26,6 @@ ja:
       wrong_length: "%{count}文字で入力してください。"
       other_than: "%{count}以外の値にしてください。"
 
-  whats: Ruby Unagi Awardとは？
-  whats_desc: >
-    Ruby Unagi Awardは、Ruby、特にCRuby(MRIとも呼ばれています)に対して貢献した人を顕彰するために、Rubyist有志によって創設された賞です。
-    過去1～2年程度の期間において、CRubyに対して顕著な貢献を成した人物を選出し、RubyKaigi開催期間に合わせて、鰻を奢ってその労をねぎらうことを趣旨としています。
-
-  nomination: 推薦受付
-  nomination_desc: >
-    2014年度の推薦を受け付けています。自薦・他薦を問いません。
-  do_nomination: "推薦する &raquo;"
-
-  party: 授賞パーティー
-  party_desc: >
-    <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
-    RubyKaigi開催のおよそ1ヶ月前程度を目処に、先着順会費制で参加者を募集できる見込みです。
-
-  winners: 過去の受賞者
-  0th: "第0回(2013年度): @nagachika さん"
-
-  nominate_message: >
-    現在、2014年度(第1回)の候補者推薦を受け付けています。
-  nominate_alert: >
-    <strong>注意</strong><br>
-    候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>
-    頂いた認証情報は、推薦情報の登録にのみ用い、他の用途には流用いたしません。
-    また、本Awardおよび関係者が、認証情報を元にTwitterに呟いたりすることなどもございません。
-  auth_twitter: Twitter経由で認証
-  auth_or: または
-  auth_github: GitHub経由で認証
-
-  nominate_created: あなたの推薦内容は正常に受け付けられました。ありがとうございました。
-
   simple_form:
     labels:
       nominate:
@@ -72,6 +41,41 @@ ja:
       nominate:
         create: 推薦を送信
 
-  signedin: 認証に成功しました。
-  signedout: サインアウトしました。
-  not_permitted: 許可されていない操作を行いました。
+  notice:
+    signedin: 認証に成功しました。
+    signedout: サインアウトしました。
+    not_permitted: 許可されていない操作を行いました。
+
+  top:
+    whats: Ruby Unagi Awardとは？
+    whats_desc: >
+      Ruby Unagi Awardは、Ruby、特にCRuby(MRIとも呼ばれています)に対して貢献した人を顕彰するために、Rubyist有志によって創設された賞です。
+      過去1～2年程度の期間において、CRubyに対して顕著な貢献を成した人物を選出し、RubyKaigi開催期間に合わせて、鰻を奢ってその労をねぎらうことを趣旨としています。
+
+    nomination: 推薦受付
+    nomination_desc: >
+      2014年度の推薦を受け付けています。自薦・他薦を問いません。
+    do_nomination: "推薦する &raquo;"
+
+    party: 授賞パーティー
+    party_desc: >
+      <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
+      RubyKaigi開催のおよそ1ヶ月前程度を目処に、先着順会費制で参加者を募集できる見込みです。
+
+    winners: 過去の受賞者
+    0th: "第0回(2013年度): @nagachika さん"
+
+  nominates:
+    title: 推薦受付
+    top_message: >
+      現在、2014年度(第1回)の候補者推薦を受け付けています。
+    top_alert: >
+      <strong>注意</strong><br>
+      候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>
+      頂いた認証情報は、推薦情報の登録にのみ用い、他の用途には流用いたしません。
+      また、本Awardおよび関係者が、認証情報を元にTwitterに呟いたりすることなどもございません。
+    auth_twitter: Twitter経由で認証
+    auth_or: または
+    auth_github: GitHub経由で認証
+
+    created: あなたの推薦内容は正常に受け付けられました。ありがとうございました。

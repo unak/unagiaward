@@ -37,7 +37,7 @@ class NominatesController < ApplicationController
 
     respond_to do |format|
       if @nominate.save
-        format.html { redirect_to nominates_path, notice: t('nominate_created') }
+        format.html { redirect_to nominates_path, notice: t('nominates.created') }
         format.json { render :show, status: :created, location: @nominate }
       else
         format.html { render :index }
@@ -82,6 +82,6 @@ class NominatesController < ApplicationController
     end
 
     def page_title
-      'nomination'
+      'nominates.title'
     end
 end

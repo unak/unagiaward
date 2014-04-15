@@ -22,7 +22,7 @@
 
     <div id="navbar-collapse-target" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-left">
-        <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && %w(index new create).include?(controller.action_name) %>><%= link_to t('nomination'), nominates_path %></li>
+        <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && %w(index new create).include?(controller.action_name) %>><%= link_to t('nominates.title'), nominates_path %></li>
 <% if admin? %>
         <li<%=raw ' class="active"' if controller.controller_name == 'nominates' && controller.action_name == 'list' %>><%= link_to 'Listing nominates', nominates_list_path %></li>
         <li><!-- separator -->&nbsp;</li>

@@ -1,36 +1,4 @@
 en:
-  whats: What's Ruby Unagi Award?
-  whats_desc: >
-    Ruby Unagi Award is an award in order to honor the person who contributed to Ruby - especially, CRuby (a.k.a. MRI) - founded by rubyist volunteers.
-    The person who contributed notably to CRuby in about last 1 or 2 years will be awarded.
-    The winner will be treated to an unagi (Japanese eel dish) and be appreciated for their pains.
-
-  nomination: Nomination
-  nomination_desc: >
-    You can nominate now for 2014.
-    Self-nomination and nomination by others are not asked.
-  do_nomination: "Nominate &raquo;"
-
-  party: Award Party
-  party_desc: >
-    The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>.
-    About one month before RubyKaigi, participants will be solicited.
-
-  winners: The Past Winners
-  0th: "the 0th winner (in 2013): @nagachika"
-
-  nominate_message: >
-    Now we accepts the nomination for 2014 (the 1st award).
-  nominate_alert: >
-    <strong>Caution</strong><br>
-    To nominate, you have to authenticate via Twitter or GitHub.<br>
-    We never use your authentication information for another purpose.
-  auth_twitter: Authenticate via Twitter
-  auth_or: or
-  auth_github: Authenticate via GitHub
-
-  nominate_created: Your nomination was successfully accepted.  Thank you.
-
   simple_form:
     labels:
       nominate:
@@ -46,6 +14,41 @@ en:
       nominate:
         create: Nominate
 
-  signedin: Successfully authenticated.
-  signedout: Signed out.
-  not_permitted: The action is not permitted.
+  notice:
+    signedin: Successfully authenticated.
+    signedout: Signed out.
+    not_permitted: The action is not permitted.
+
+  top:
+    whats: What's Ruby Unagi Award?
+    whats_desc: >
+      Ruby Unagi Award is an award in order to honor the person who contributed to Ruby - especially, CRuby (a.k.a. MRI) - founded by rubyist volunteers.
+      The person who contributed notably to CRuby in about last 1 or 2 years will be awarded.
+      The winner will be treated to an unagi (Japanese eel dish) and be appreciated for their pains.
+
+    nomination: Nomination
+    nomination_desc: >
+      You can nominate now for 2014.
+      Self-nomination and nomination by others are not asked.
+    do_nomination: "Nominate &raquo;"
+
+    party: Award Party
+    party_desc: >
+      The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>.
+      About one month before RubyKaigi, participants will be solicited.
+
+    winners: The Past Winners
+    0th: "the 0th winner (in 2013): @nagachika"
+
+  nominates:
+    title: Nomination
+    top_message: >
+      Now we accepts the nomination for 2014 (the 1st award).
+    top_alert: >
+      <strong>Caution</strong><br>
+      To nominate, you have to authenticate via Twitter or GitHub.<br>
+      We never use your authentication information for another purpose.
+    auth_twitter: Authenticate via Twitter
+    auth_or: or
+    auth_github: Authenticate via GitHub
+    created: Your nomination was successfully accepted.  Thank you.

@@ -2,27 +2,27 @@
   <div class="row">
     <div class="col-md-9">
       <div class="jumbotron">
-        <h1><%=t 'whats' %></h1>
-        <p><%=t 'whats_desc' %></p>
+        <h1><%=t 'top.whats' %></h1>
+        <p><%=t 'top.whats_desc' %></p>
       </div>
 
       <div class="row">
         <div class="col-md-4">
-          <h2><%=t 'nomination' %></h2>
-          <p><%=t 'nomination_desc' %></p>
-          <p><%= link_to raw(t('do_nomination')), nominates_path, class: 'btn btn-primary', role: 'button' %></p>
+          <h2><%=t 'top.nomination' %></h2>
+          <p><%=t 'top.nomination_desc' %></p>
+          <p><%= link_to raw(t('top.do_nomination')), nominates_path, class: 'btn btn-primary', role: 'button' %></p>
         </div>
 
         <div class="col-md-4">
-          <h2><%=t 'party' %></h2>
-          <p><%=raw t 'party_desc' %> <span class="label label-info">Comming Soon!</span>
+          <h2><%=t 'top.party' %></h2>
+          <p><%=raw t 'top.party_desc' %> <span class="label label-info">Comming Soon!</span>
           </p>
         </div>
 
         <div class="col-md-4">
-          <h2><%=t 'winners' %></h2>
+          <h2><%=t 'top.winners' %></h2>
           <ul class="list-group">
-            <li class="list-group-item"><%=t '0th' %></li>
+            <li class="list-group-item"><%=t 'top.0th' %></li>
           </ul>
         </div>
       </div>
