@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/unak/unagiaward.svg)](https://travis-ci.org/unak/unagiaward)
+
 Ruby Unagi Award
 ================
 
