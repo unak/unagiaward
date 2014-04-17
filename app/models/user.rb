@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   validates :provider, presence: true
-  validates :uid, presence: true, uniqueness: { score: :provider }
+  validates :uid, presence: true, uniqueness: { scope: :provider }
   validates :name, presence: true
 
   def self.create_with_auth(auth)
