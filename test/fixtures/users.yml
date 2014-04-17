@@ -7,7 +7,7 @@ one:
 
 two:
   provider: github
-  uid: "1"
+  uid: "2"
   name: github_user
 
 admin:
