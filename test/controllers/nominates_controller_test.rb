@@ -15,10 +15,6 @@ class NominatesControllerTest < ActionController::TestCase
     session.clear
   end
 
-  def login(user = :one)
-    session[:user_id] = users(user).id
-  end
-
   test "should get index" do
     get :index, locale: "en"
     assert_redirected_to root_path
@@ -36,12 +32,14 @@ class NominatesControllerTest < ActionController::TestCase
     assert_response :success
     assert_not_nil assigns(:nominates)
     assert_nil flash[:alert]
+    assert_equal 'nominates.title', @controller.__send__(:page_title)
   end
 
   test "should get new" do
     get :new, locale: "en"
     assert_response :success
     assert_nil flash[:alert]
+    assert_equal 'nominates.title', @controller.__send__(:page_title)
   end
 
   test "should create nominate" do
@@ -49,6 +47,7 @@ class NominatesControllerTest < ActionController::TestCase
       post :create, locale: "en", nominate: { candidate: @nominate.candidate, reason: @nominate.reason, user_id: @nominate.user_id }
     end
     assert_response :success
+    assert_equal 'nominates.title', @controller.__send__(:page_title)
     assert_template :new
     flash.clear
 
@@ -86,6 +85,7 @@ class NominatesControllerTest < ActionController::TestCase
     get :show, locale: "en", id: @nominate
     assert_response :success
     assert_nil flash[:alert]
+    assert_equal 'nominates.title', @controller.__send__(:page_title)
   end
 
   test "should get edit" do
@@ -104,6 +104,7 @@ class NominatesControllerTest < ActionController::TestCase
     get :edit, locale: "en", id: @nominate
     assert_response :success
     assert_nil flash[:alert]
+    assert_equal 'nominates.title', @controller.__send__(:page_title)
   end
 
   test "should update nominate" do
