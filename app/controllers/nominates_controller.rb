@@ -61,7 +61,7 @@ class NominatesController < ApplicationController
   def destroy
     @nominate.destroy
     respond_to do |format|
-      format.html { redirect_to nominates_url }
+      format.html { redirect_to nominates_url, notice: 'Nominate was deleted.' }
       format.json { head :no_content }
     end
   end

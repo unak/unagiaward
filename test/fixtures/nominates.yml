@@ -2,10 +2,10 @@
 
 one:
   user_id: 1
-  candidate: MyString
-  reason: MyString
+  candidate: Andy
+  reason: Because his name starts with 'A'.
 
 two:
-  user_id: 1
-  candidate: MyString
-  reason: MyString
+  user_id: 2
+  candidate: Becky
+  reason: Because her name starts with 'B'.
