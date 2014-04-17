@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
       user.provider = auth["provider"]
       user.uid = auth["uid"]
       user.name = auth["info"]["nickname"] || auth["info"]["name"]
-      p user
     end
   end
 end
