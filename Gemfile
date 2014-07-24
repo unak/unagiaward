@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
@@ -52,3 +52,4 @@ gem 'simple_form'
 ruby '2.1.2'
 gem 'rails_12factor', group: :production
 gem 'thin', group: :production
+gem 'newrelic_rpm', group: :production
