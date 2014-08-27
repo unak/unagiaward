@@ -56,13 +56,13 @@ ja:
 
     nomination: 推薦受付
     nomination_desc: >
-      2014年度の推薦を受け付けています。自薦・他薦を問いません。8月12日に締め切ります。
+      2014年度の推薦受付は終了しました。
     do_nomination: "推薦する &raquo;"
 
     party: 授賞パーティー
     party_desc: >
       <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
-      RubyKaigi開催のおよそ1ヶ月前程度を目処に、先着順会費制で参加者を募集できる見込みです。
+      RubyKaigi開催のおよそ2週間前程度を目処に、先着順会費制で参加者を募集できる見込みです。
 
     winners: 過去の受賞者
     0th: "第0回(2013年度): @nagachika さん"
