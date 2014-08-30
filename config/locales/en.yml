@@ -38,11 +38,12 @@ en:
 
     winners: The Past Winners
     0th: "the 0th winner (in 2013): @nagachika"
+    1st: "the 1st winner (in 2014): ???"
 
   nominates:
     title: Nomination
     top_message: >
-      Now we accepts the nomination for 2014 (the 1st award).
+      The nomination for 2014 (the 1st award) has been closed.
     top_alert: >
       <strong>Caution</strong><br>
       To nominate, you have to authenticate via Twitter or GitHub.<br>

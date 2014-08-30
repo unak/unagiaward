@@ -66,11 +66,12 @@ ja:
 
     winners: 過去の受賞者
     0th: "第0回(2013年度): @nagachika さん"
+    1st: "第1回(2014年度): ???"
 
   nominates:
     title: 推薦受付
     top_message: >
-      現在、2014年度(第1回)の候補者推薦を受け付けています。
+      2014年度(第1回)の候補者推薦受付は終了しました。
     top_alert: >
       <strong>注意</strong><br>
       候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>
