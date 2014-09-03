@@ -34,11 +34,11 @@ en:
     party: Award Party
     party_desc: >
       The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>.
-      About a half month before RubyKaigi, participants will be solicited.
+      See more details at <a href="http://87743bcf01f8ba3ff0fd011c56.doorkeeper.jp/events/14968">the registration</a>.
 
     winners: The Past Winners
-    0th: "the 0th winner (in 2013): @nagachika"
-    1st: "the 1st winner (in 2014): ???"
+    0th: 'the 0th winner (in 2013): <a href="https://github.com/nagachika">@nagachika</a>'
+    1st: 'the 1st winner (in 2014): <a href="https://github.com/ko1">@ko1</a>'
 
   nominates:
     title: Nomination

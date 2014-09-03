@@ -62,11 +62,11 @@ ja:
     party: 授賞パーティー
     party_desc: >
       <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
-      RubyKaigi開催のおよそ2週間前程度を目処に、先着順会費制で参加者を募集できる見込みです。
+      詳しくは<a href="http://87743bcf01f8ba3ff0fd011c56.doorkeeper.jp/events/14968">参加申し込みページ</a>をご確認ください。
 
     winners: 過去の受賞者
-    0th: "第0回(2013年度): @nagachika さん"
-    1st: "第1回(2014年度): ???"
+    0th: '第0回(2013年度): <a href="https://github.com/nagachika">@nagachika</a> さん'
+    1st: '第1回(2014年度): <a href="https://github.com/ko1">@ko1</a> さん'
 
   nominates:
     title: 推薦受付
