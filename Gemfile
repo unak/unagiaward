@@ -49,7 +49,7 @@ gem 'simple_form'
 
 
 # for heroku
-ruby '2.1.2'
+ruby '2.1.4'
 gem 'rails_12factor', group: :production
 gem 'thin', group: :production
 gem 'newrelic_rpm', group: :production
