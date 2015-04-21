@@ -37,7 +37,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin, :mswin64]
 
 
 # for my app
@@ -46,10 +46,11 @@ gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'bundler', '>= 1.9'
 
 
 # for heroku
-ruby '2.1.5'
+ruby '2.1.6'
 gem 'rails_12factor', group: :production
 gem 'thin', group: :production
 gem 'newrelic_rpm', group: :production
