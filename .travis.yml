@@ -3,4 +3,5 @@ rvm:
   - 2.1.6
 bundler_args: "--without development production doc"
 script:
+  - bundle exec rake db:migrate RAILS_ENV=test
   - bundle exec rake test
