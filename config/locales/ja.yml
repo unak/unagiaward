@@ -56,22 +56,23 @@ ja:
 
     nomination: 推薦受付
     nomination_desc: >
-      2014年度の推薦受付は終了しました。
+      近日中に2015年度の推薦受付を開始する予定です。
     do_nomination: "推薦する &raquo;"
 
     party: 授賞パーティー
     party_desc: >
-      <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
-      詳しくは<a href="http://87743bcf01f8ba3ff0fd011c56.doorkeeper.jp/events/14968">参加申し込みページ</a>をご確認ください。
+      <a href="http://rubykaigi.org/2015">RubyKaigi 2015</a>に合わせて、授賞パーティー(という名の会食)を行う予定です。
+      詳細についてはRubyKaigi 2015の1ヶ月前頃に公開する予定です。
 
     winners: 過去の受賞者
     0th: '第0回(2013年度): <a href="https://github.com/nagachika">@nagachika</a> さん'
     1st: '第1回(2014年度): <a href="https://github.com/ko1">@ko1</a> さん'
+    2nd: '第2回(2015年度): ???'
 
   nominates:
     title: 推薦受付
     top_message: >
-      2014年度(第1回)の候補者推薦受付は終了しました。
+      2015年度(第2回)の候補者推薦受付は近日中に開始する予定です。
     top_alert: >
       <strong>注意</strong><br>
       候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>

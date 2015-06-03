@@ -28,22 +28,23 @@ en:
 
     nomination: Nomination
     nomination_desc: >
-      Nomination for 2014 has been closed.
+      Nomination for 2015 will open soon.
     do_nomination: "Nominate &raquo;"
 
     party: Award Party
     party_desc: >
-      The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2014">RubyKaigi 2014</a>.
+      The award party (luncheon party) will be held along with <a href="http://rubykaigi.org/2015">RubyKaigi 2015</a>.
       See more details at <a href="http://87743bcf01f8ba3ff0fd011c56.doorkeeper.jp/events/14968">the registration</a>.
 
     winners: The Past Winners
     0th: 'the 0th winner (in 2013): <a href="https://github.com/nagachika">@nagachika</a>'
     1st: 'the 1st winner (in 2014): <a href="https://github.com/ko1">@ko1</a>'
+    2nd: 'the 2nd winner (in 2015): ???'
 
   nominates:
     title: Nomination
     top_message: >
-      The nomination for 2014 (the 1st award) has been closed.
+      The nomination for 2015 (the 2nd award) will open soon.
     top_alert: >
       <strong>Caution</strong><br>
       To nominate, you have to authenticate via Twitter or GitHub.<br>
