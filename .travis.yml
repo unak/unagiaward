@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.6
+  - 2.1.7
 bundler_args: "--without development production doc"
 script:
   - bundle exec rake db:migrate RAILS_ENV=test
