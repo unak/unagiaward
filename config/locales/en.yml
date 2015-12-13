@@ -28,22 +28,23 @@ en:
 
     nomination: Nomination
     nomination_desc: >
-      Sorry, the award for 2015 has been canceled.
+      The 3rd Award (in 2016) nomination will be opened at Jul. 2016.
     do_nomination: "Nominate &raquo;"
 
     party: Award Party
     party_desc: >
-      The award for 2015 has been canceled.
+      The 3rd Award patry will be held on Sep. 2016 at Kyoto.
 
     winners: The Past Winners
     0th: 'the 0th winner (in 2013): <a href="https://github.com/nagachika">@nagachika</a>'
     1st: 'the 1st winner (in 2014): <a href="https://github.com/ko1">@ko1</a>'
     2nd: 'the 2nd winner (in 2015): canceled'
+    3rd: 'the 3rd winner (in 2016): to be determined'
 
   nominates:
     title: Nomination
     top_message: >
-      The award for 2015 has been canceled.
+      The 3rd Award (in 2016) nomination will be opened at Jul. 2016.
     top_alert: >
       <strong>Caution</strong><br>
       To nominate, you have to authenticate via Twitter or GitHub.<br>

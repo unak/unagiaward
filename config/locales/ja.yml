@@ -56,22 +56,23 @@ ja:
 
     nomination: 推薦受付
     nomination_desc: >
-      都合により2015年度の開催は中止となりました。申し訳ございません。
+      第3回(2016年度)の推薦は2016年7月頃より受付予定です。
     do_nomination: "推薦する &raquo;"
 
     party: 授賞パーティー
     party_desc: >
-      2015年度の開催は中止となりました。
+      2016年9月上旬に京都で開催の見込みです。
 
     winners: 過去の受賞者
     0th: '第0回(2013年度): <a href="https://github.com/nagachika">@nagachika</a> さん'
     1st: '第1回(2014年度): <a href="https://github.com/ko1">@ko1</a> さん'
     2nd: '第2回(2015年度): 中止'
+    3rd: '第3回(2016年度): 未定'
 
   nominates:
     title: 推薦受付
     top_message: >
-      都合により2015年度の開催は中止となりました。申し訳ございません。
+      第3回(2016年度)の推薦は2016年7月頃より受付予定です。
     top_alert: >
       <strong>注意</strong><br>
       候補者の推薦には、TwitterまたはGitHub経由での認証が必要となります。<br>
