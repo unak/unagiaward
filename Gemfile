@@ -51,7 +51,7 @@ gem 'coffee-script-source', '~> 1.8.0', group: [:development, :test]
 
 
 # for heroku
-ruby '2.1.7'
+ruby '2.2.4'
 gem 'rails_12factor', group: :production
 gem 'thin', group: :production
 gem 'newrelic_rpm', group: :production
